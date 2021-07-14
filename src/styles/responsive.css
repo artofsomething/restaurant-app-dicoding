@@ -1,0 +1,143 @@
+@media screen and (min-width: 650px) {
+    .hero_image{
+        background-image: url('../public/images/heros/hero-image_4.jpg');
+    }
+    .content .content__heading {
+        font-size: 1em;
+
+    }
+    #picture{
+        width: 100%;
+  height: 500px;
+}
+
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+
+    .app-bar .app-bar__brand h1 {
+        font-size: 1.5em;
+    }
+
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .restaurants {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .restaurant {
+        grid-template-rows: 0.5fr 1fr auto auto;
+    }
+    
+
+    .restaurant .restaurant__title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurant  {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .main-text {
+        width: 100%;
+        text-align: center;
+        padding: 250px 0px;
+    }
+
+    .main-text h1 {
+        font-size: 24pt;
+        font-weight: bold;
+        background-color: #01a2ff7c;
+        margin: auto 0px;
+    }
+
+    .hero_image {
+        height: 500px;
+    }
+
+    .menus {
+        width: 100%;
+        display: grid;
+        grid-column-gap: 100px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .drinks{
+        margin: 0;
+    }
+    .drinks ul,.foods ul{
+        list-style-position: inside;
+    }
+    
+    .restaurant__info{
+        margin-top: 20px;
+    }
+    .review_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .restaurant__info{
+        margin:0;
+    }
+    .restaurant_view{
+        display:grid;
+        grid-template-columns:3fr 1fr;
+        grid-column-gap: 30px;
+    }
+    .review_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        justify-content: center;
+    }
+    .app-bar .app-bar__brand h1 {
+        font-size: 2em;
+    }
+
+    .content .content__heading {
+        font-size: 1.2em;
+
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .restaurants {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurants {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .restaurants {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
