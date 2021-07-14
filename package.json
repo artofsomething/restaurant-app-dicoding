@@ -20,7 +20,8 @@
     "lozad": "^1.16.0",
     "regenerator-runtime": "^0.13.5",
     "serviceworker-webpack-plugin": "^1.0.1",
-    "webpack-merge": "^5.0.9"
+    "webpack-merge": "^5.0.9",
+    "node": "^12.16.3"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
